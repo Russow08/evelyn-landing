@@ -68,3 +68,7 @@ evelyn-landing/
 
 - **Playfair Display** (Google Fonts) — headings, elegante, serif
 - **Inter** (Google Fonts) — body, legible, moderno
+
+## Agentic workflow note
+- Esta branch existe para pulir la primera versión visual antes de abrir PR y mover la tarea hacia Ready for Test.
+
