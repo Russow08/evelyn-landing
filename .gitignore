@@ -1,0 +1,9 @@
+# Archivos de referencia de diseño (solo uso local)
+diente.png
+paleta de colores.png
+tratamientos.png
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

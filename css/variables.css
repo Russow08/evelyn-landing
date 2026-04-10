@@ -1,0 +1,87 @@
+/* ==========================================================================
+   DESIGN TOKENS - Dra. Evelyn Valeria
+   Sistema de diseno basado en marca personal: odontologia + cosmetologia
+   ========================================================================== */
+
+:root {
+    /* --- Paleta de Colores --- */
+    --color-base: #F4F9FB;
+    --color-principal: #2BB5A0;
+    --color-principal-hover: #229A87;
+    --color-principal-light: rgba(43, 181, 160, 0.12);
+    --color-principal-dark: #1A7D6E;
+    --color-acento: #1E3A5F;
+    --color-acento-light: rgba(30, 58, 95, 0.10);
+    --color-surface: #FFFFFF;
+    --color-success: #2BB5A0;
+    --color-error: #C45C5C;
+
+    /* Textos */
+    --text-dark: #1A2E35;
+    --text-medium: #3D5A6B;
+    --text-light: #6B8A96;
+    --text-inverse: #FFFFFF;
+
+    /* Fondos de seccion */
+    --bg-testimonials: #EBF5F3;
+    --bg-touch: var(--color-acento);
+    --bg-footer: #112233;
+
+    /* --- Tipografia --- */
+    --font-title: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Escala fluida */
+    --fs-display: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+    --fs-h1: clamp(2rem, 3vw + 1rem, 3.5rem);
+    --fs-h2: clamp(1.5rem, 2vw + 0.75rem, 2.5rem);
+    --fs-h3: clamp(1.15rem, 1.5vw + 0.5rem, 1.5rem);
+    --fs-body: clamp(0.95rem, 0.5vw + 0.75rem, 1.1rem);
+    --fs-small: 0.875rem;
+    --fs-xs: 0.75rem;
+
+    --lh-tight: 1.2;
+    --lh-normal: 1.6;
+    --lh-relaxed: 1.8;
+
+    /* --- Espaciado (base 8px) --- */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+    --space-2xl: 64px;
+    --space-3xl: 100px;
+    --space-section: clamp(60px, 8vw, 120px);
+
+    /* --- Bordes --- */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-full: 9999px;
+
+    /* --- Sombras --- */
+    --shadow-sm: 0 1px 3px rgba(45, 41, 38, 0.06);
+    --shadow-md: 0 4px 12px rgba(45, 41, 38, 0.08);
+    --shadow-lg: 0 8px 30px rgba(45, 41, 38, 0.12);
+    --shadow-xl: 0 16px 50px rgba(45, 41, 38, 0.15);
+
+    /* --- Transiciones --- */
+    --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --duration-fast: 0.2s;
+    --duration-normal: 0.3s;
+    --duration-slow: 0.5s;
+    --transition: all var(--duration-normal) var(--ease-out);
+
+    /* --- Z-index --- */
+    --z-nav: 100;
+    --z-overlay: 200;
+    --z-modal: 300;
+    --z-whatsapp: 1000;
+
+    /* --- Layout --- */
+    --max-width: 1200px;
+    --nav-height: 72px;
+}
