@@ -156,6 +156,7 @@
     var calcBar     = document.getElementById('calc-complexity-bar');
     var calcComplex = document.getElementById('calc-complexity-text');
     var calcTime    = document.getElementById('calc-time');
+    var calcTimeSub = document.getElementById('calc-time-sub');
     var calcPlan    = document.getElementById('calc-plan');
     var calcPrice   = document.getElementById('calc-price');
     var qtyDisplay  = document.getElementById('qty-display');
@@ -175,7 +176,7 @@
 
         calcBar.style.width = data.complexity + '%';
         calcComplex.textContent = data.complexityLabel;
-        calcTime.innerHTML = data.time + ' &mdash; ' + data.sessions;
+        calcTime.innerHTML = data.time;
 
         var planHtml = '';
         data.plan.forEach(function (item) {
@@ -183,14 +184,19 @@
         });
         calcPlan.innerHTML = planHtml;
 
-        var total1 = data.priceUnit * qty;
-        var total2 = data.priceMax  * qty;
-
-        // Profilaxis qty doesn't multiply (it's per-session, not per-tooth)
+        // Profilaxis: por sesion (no por diente), el resto escala con cantidad
         if (key === 'profilaxis') {
             calcPrice.innerHTML = '$' + data.priceUnit + ' &ndash; $' + data.priceMax;
+            if (calcTimeSub) calcTimeSub.textContent = 'Por sesi\u00f3n';
         } else {
+            var total1 = data.priceUnit * qty;
+            var total2 = data.priceMax  * qty;
             calcPrice.innerHTML = '$' + total1 + ' &ndash; $' + total2;
+            if (calcTimeSub) {
+                calcTimeSub.textContent = qty === 1
+                    ? 'Por diente'
+                    : 'Por diente \u2014 ' + qty + ' dientes en total';
+            }
         }
     }
 

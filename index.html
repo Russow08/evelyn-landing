@@ -82,7 +82,6 @@
 
             <div class="nav-links" id="nav-menu" role="menubar">
                 <a href="#sobre-mi" role="menuitem">Quien Soy</a>
-                <a href="#servicios" role="menuitem">Especialidades</a>
                 <a href="#tratamientos" role="menuitem">Tratamientos</a>
                 <a href="#calculador" role="menuitem">Calculador</a>
                 <a href="#testimonios" role="menuitem">Testimonios</a>
@@ -202,59 +201,6 @@
             </div>
         </section>
 
-        <!-- ===== SERVICIOS ===== -->
-        <section class="services" id="servicios">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Cuidado en <span class="text-accent">Armonia</span></h2>
-                    <p>Servicios pensados para tu bienestar integral, combinando salud dental y cuidado facial en un mismo espacio.</p>
-                </div>
-
-                <div class="services-grid">
-                    <!-- Card 1: Odontologia Integral -->
-                    <div class="service-card reveal" data-delay="1">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9.24 2 7 4.24 7 7c0 1.64.8 3.09 2.03 4H7v2h4v5l1 3 1-3v-5h4v-2h-2.03C16.2 10.09 17 8.64 17 7c0-2.76-2.24-5-5-5zm-2 5c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/></svg>
-                        </div>
-                        <h3>Odontologia Integral</h3>
-                        <p>Prevencion, diagnostico y restauracion dental. Cuidamos tu salud bucal con tecnicas modernas y atencion minuciosa.</p>
-                        <a href="#contacto" class="btn btn-primary btn-sm" onclick="prefillService('Odontologia Integral')">Consultar &rarr;</a>
-                    </div>
-
-                    <!-- Card 2: Diseno de Sonrisa -->
-                    <div class="service-card reveal" data-delay="2">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
-                        </div>
-                        <h3>Diseno de Sonrisa</h3>
-                        <p>Blanqueamiento profesional, resinas esteticas de alta calidad y analisis facial para una sonrisa que refleje tu personalidad.</p>
-                        <a href="#contacto" class="btn btn-primary btn-sm" onclick="prefillService('Diseno de Sonrisa')">Consultar &rarr;</a>
-                    </div>
-
-                    <!-- Card 3: Cosmetologia Facial -->
-                    <div class="service-card reveal" data-delay="3">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-1.12.23-2.19.65-3.16C5.96 11.53 8.71 13 12 13s6.04-1.47 7.35-4.16c.42.97.65 2.04.65 3.16 0 4.41-3.59 8-8 8z"/></svg>
-                        </div>
-                        <h3>Cosmetologia Facial</h3>
-                        <p>Limpieza profunda, hidratacion avanzada y tratamientos de revitalizacion. Tu piel merece atencion experta.</p>
-                        <p class="service-note">*Especializacion en cosmetologia en curso</p>
-                        <a href="#contacto" class="btn btn-primary btn-sm" onclick="prefillService('Cosmetologia Facial')">Consultar &rarr;</a>
-                    </div>
-
-                    <!-- Card 4: Paquetes Integrales -->
-                    <div class="service-card reveal" data-delay="4">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
-                        </div>
-                        <h3>Paquetes Integrales</h3>
-                        <p>Sonrisa + piel en una sola experiencia. Combina tu tratamiento dental y facial para un resultado completo y armonico.</p>
-                        <a href="#contacto" class="btn btn-primary btn-sm" onclick="prefillService('Paquete Integral (Sonrisa + Piel)')">Consultar &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- ===== TRATAMIENTOS ===== -->
         <section class="treatments" id="tratamientos">
             <div class="container">
@@ -268,7 +214,19 @@
                     <!-- Profilaxis Dental -->
                     <div class="tc treatment-card--profilaxis reveal" tabindex="0" role="button" aria-label="Profilaxis Dental - ver detalle" data-delay="1">
                         <div class="tc-bg">
-                            <img src="diente2.png" alt="" aria-hidden="true" class="tc-tooth">
+                            <!-- Profilaxis: diente + gotas de agua + destellos (limpieza) -->
+                            <svg class="tc-illustration" viewBox="0 0 110 140" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20,55 C20,28 30,10 55,10 C80,10 90,28 90,55 L84,72 L71,110 C69,117 66,122 62,122 C58,122 55,117 53,110 L40,72 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M37,14 C41,22 47,26 55,26 C63,26 69,22 73,14" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <path d="M27,26 C32,14 42,9 51,10 C41,12 29,20 25,34 Z" fill="rgba(255,255,255,0.45)"/>
+                                <path d="M9,44 C9,41 11,33 13,33 C15,33 17,41 17,44 C17,48 15,51 13,51 C11,51 9,48 9,44 Z" fill="rgba(255,255,255,0.65)"/>
+                                <path d="M3,63 C3,61 4,56 5.5,56 C7,56 8,61 8,63 C8,66 7,68 5.5,68 C4,68 3,66 3,63 Z" fill="rgba(255,255,255,0.5)"/>
+                                <circle cx="11" cy="25" r="3.5" fill="rgba(255,255,255,0.4)"/>
+                                <circle cx="5" cy="37" r="2.2" fill="rgba(255,255,255,0.3)"/>
+                                <path d="M96,24 L98,18 L100,24 L106,26 L100,28 L98,34 L96,28 L90,26 Z" fill="rgba(255,255,255,0.75)"/>
+                                <path d="M101,43 L102,40 L103,43 L106,44 L103,45 L102,48 L101,45 L98,44 Z" fill="rgba(255,255,255,0.5)"/>
+                                <path d="M37,42 L42,47 M43,37 L49,43" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                            </svg>
                         </div>
                         <div class="tc-arrow" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
@@ -286,7 +244,17 @@
                     <!-- Restauraciones Dentales -->
                     <div class="tc treatment-card--restauraciones reveal" tabindex="0" role="button" aria-label="Restauraciones Dentales - ver detalle" data-delay="2">
                         <div class="tc-bg">
-                            <img src="diente2.png" alt="" aria-hidden="true" class="tc-tooth">
+                            <!-- Restauraciones: diente con relleno teal + herramienta dental -->
+                            <svg class="tc-illustration" viewBox="0 0 110 140" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20,55 C20,28 30,10 55,10 C80,10 90,28 90,55 L84,72 L71,110 C69,117 66,122 62,122 C58,122 55,117 53,110 L40,72 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M37,14 C41,22 47,26 55,26 C63,26 69,22 73,14" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <path d="M27,26 C32,14 42,9 51,10 C41,12 29,20 25,34 Z" fill="rgba(255,255,255,0.45)"/>
+                                <path d="M52,18 L55,32 L51,42 L55,58" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <path d="M45,30 C46,21 51,16 57,16 C63,16 68,21 68,30 C68,39 63,45 56,45 C49,45 45,39 45,30 Z" fill="rgba(43,181,160,0.82)" stroke="rgba(255,255,255,0.45)" stroke-width="1"/>
+                                <line x1="84" y1="15" x2="101" y2="3" stroke="rgba(255,255,255,0.6)" stroke-width="2.5" stroke-linecap="round"/>
+                                <circle cx="103" cy="2" r="4.5" fill="rgba(255,255,255,0.5)"/>
+                                <path d="M82,18 L77,25" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
                         </div>
                         <div class="tc-arrow" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
@@ -304,7 +272,18 @@
                     <!-- Sellantes Dentales -->
                     <div class="tc treatment-card--sellantes reveal" tabindex="0" role="button" aria-label="Sellantes Dentales - ver detalle" data-delay="3">
                         <div class="tc-bg">
-                            <img src="diente2.png" alt="" aria-hidden="true" class="tc-tooth">
+                            <!-- Sellantes: diente con escudo protector + palomita -->
+                            <svg class="tc-illustration" viewBox="0 0 110 140" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20,55 C20,28 30,10 55,10 C80,10 90,28 90,55 L84,72 L71,110 C69,117 66,122 62,122 C58,122 55,117 53,110 L40,72 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M37,14 C41,22 47,26 55,26 C63,26 69,22 73,14" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <path d="M27,26 C32,14 42,9 51,10 C41,12 29,20 25,34 Z" fill="rgba(255,255,255,0.45)"/>
+                                <path d="M18,52 C18,22 30,6 55,6 C80,6 92,22 92,52" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.68)" stroke-width="2"/>
+                                <path d="M40,33 L51,44 L70,17" stroke="rgba(255,255,255,0.92)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="17" y1="24" x2="10" y2="16" stroke="rgba(255,255,255,0.42)" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="14" y1="38" x2="6" y2="34" stroke="rgba(255,255,255,0.38)" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="93" y1="24" x2="100" y2="16" stroke="rgba(255,255,255,0.42)" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="96" y1="38" x2="104" y2="34" stroke="rgba(255,255,255,0.38)" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
                         </div>
                         <div class="tc-arrow" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
@@ -322,7 +301,19 @@
                     <!-- Extracciones Dentales -->
                     <div class="tc treatment-card--extracciones reveal" tabindex="0" role="button" aria-label="Extracciones Dentales - ver detalle" data-delay="4">
                         <div class="tc-bg">
-                            <img src="diente2.png" alt="" aria-hidden="true" class="tc-tooth">
+                            <!-- Extracciones: diente con raiz + forceps + flecha ascendente -->
+                            <svg class="tc-illustration" viewBox="0 0 110 140" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22,55 C22,28 32,10 55,10 C78,10 88,28 88,55 L82,72 L70,108 C68,115 65,122 61,122 C57,122 54,115 52,108 L38,72 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M38,14 C42,22 47,26 55,26 C63,26 68,22 72,14" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <path d="M40,72 L52,108" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" stroke-linecap="round"/>
+                                <path d="M70,72 L61,108" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" stroke-linecap="round"/>
+                                <path d="M28,26 C33,14 42,9 51,10 C41,12 30,20 26,34 Z" fill="rgba(255,255,255,0.45)"/>
+                                <path d="M76,8 C79,5 84,4 87,7 L91,11 C87,16 80,23 73,27 L66,20 Z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.62)" stroke-width="1.5" stroke-linejoin="round"/>
+                                <line x1="87" y1="7" x2="103" y2="1" stroke="rgba(255,255,255,0.55)" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="91" y1="11" x2="106" y2="6" stroke="rgba(255,255,255,0.42)" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M9,70 L9,50 M6,57 L9,50 L12,57" stroke="rgba(255,255,255,0.58)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                                <path d="M4,90 L4,74 M2,80 L4,74 L6,80" stroke="rgba(255,255,255,0.38)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                            </svg>
                         </div>
                         <div class="tc-arrow" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
@@ -396,7 +387,46 @@
                     <div class="calc-panel calc-panel--center">
                         <p class="calc-center-label">Toca el diente para ver el tratamiento</p>
                         <div class="calc-tooth-wrapper" id="calc-tooth" role="button" tabindex="0" aria-label="Diente interactivo - haz clic para animar">
-                            <img src="diente2.png" alt="Modelo dental interactivo" class="calc-tooth-img" id="calc-tooth-img">
+                            <!-- Diente 3D SVG con gradientes y luces -->
+                            <svg class="calc-tooth-svg" viewBox="0 0 100 122" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <radialGradient id="calcCrown" cx="38%" cy="28%" r="70%">
+                                        <stop offset="0%" stop-color="#c8eaff"/>
+                                        <stop offset="25%" stop-color="#6abfe8"/>
+                                        <stop offset="60%" stop-color="#1a7cc0"/>
+                                        <stop offset="100%" stop-color="#083a6a"/>
+                                    </radialGradient>
+                                    <radialGradient id="calcRoot" cx="50%" cy="20%" r="80%">
+                                        <stop offset="0%" stop-color="#3888b8"/>
+                                        <stop offset="100%" stop-color="#062440"/>
+                                    </radialGradient>
+                                    <linearGradient id="calcShine" x1="0%" y1="0%" x2="80%" y2="80%">
+                                        <stop offset="0%" stop-color="rgba(255,255,255,0.8)"/>
+                                        <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Raiz izquierda -->
+                                <path d="M28,64 C24,64 18,68 16,84 C14,100 18,118 25,120 C32,122 37,113 39,97 L42,64 Z" fill="url(#calcRoot)"/>
+                                <!-- Raiz derecha -->
+                                <path d="M72,64 C76,64 82,68 84,84 C86,100 82,118 75,120 C68,122 63,113 61,97 L58,64 Z" fill="url(#calcRoot)"/>
+                                <!-- Cuello / union -->
+                                <path d="M28,64 L72,64 L70,70 L30,70 Z" fill="url(#calcRoot)"/>
+                                <!-- Corona principal -->
+                                <path d="M12,42 C12,16 24,2 50,2 C76,2 88,16 88,42 C88,56 82,64 75,67 L25,67 C18,64 12,56 12,42 Z" fill="url(#calcCrown)"/>
+                                <!-- Surco entre cusps -->
+                                <path d="M34,5 C38,14 43,18 50,18 C57,18 62,14 66,5" stroke="rgba(0,30,80,0.5)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <!-- Brillo principal (arriba izquierda) -->
+                                <path d="M18,20 C24,10 34,5 42,6 C33,8 22,16 18,30 Z" fill="url(#calcShine)"/>
+                                <!-- Reflejo especular -->
+                                <ellipse cx="65" cy="14" rx="7" ry="4" fill="rgba(255,255,255,0.32)" transform="rotate(-25 65 14)"/>
+                                <!-- Brillo secundario (centro corona) -->
+                                <ellipse cx="34" cy="36" rx="4.5" ry="2.8" fill="rgba(255,255,255,0.18)" transform="rotate(-15 34 36)"/>
+                                <!-- Borde izquierdo de la corona (destello) -->
+                                <path d="M13,38 C13,22 19,10 27,5" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <!-- Veinas internas raices -->
+                                <path d="M22,70 L18,112" stroke="rgba(100,180,230,0.2)" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M78,70 L82,112" stroke="rgba(100,180,230,0.2)" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
                             <div class="calc-tooth-ring calc-tooth-ring--1" aria-hidden="true"></div>
                             <div class="calc-tooth-ring calc-tooth-ring--2" aria-hidden="true"></div>
                             <div class="calc-tooth-pulse" id="calc-pulse" aria-hidden="true"></div>
@@ -419,7 +449,7 @@
                         <div class="calc-result-block">
                             <p class="calc-result-label">Tiempo estimado</p>
                             <p class="calc-result-value" id="calc-time">30 &ndash; 45 min</p>
-                            <p class="calc-result-sub">Por sesi&oacute;n</p>
+                            <p class="calc-result-sub" id="calc-time-sub">Por sesi&oacute;n</p>
                         </div>
 
                         <div class="calc-result-block">
