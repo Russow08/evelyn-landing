@@ -290,6 +290,31 @@
         if (!e.target.closest('.tc')) closeAllCards();
     });
 
+    // --- Calculador: tilt 3D con perspectiva al mover el mouse ---
+    var calcWrapper = document.getElementById('calc-tooth');
+    if (calcWrapper) {
+        var calcSvgEl = calcWrapper.querySelector('.calc-tooth-svg');
+        if (calcSvgEl) {
+            calcWrapper.addEventListener('mousemove', function (e) {
+                var r  = calcWrapper.getBoundingClientRect();
+                var px = (e.clientX - r.left) / r.width  - 0.5;
+                var py = (e.clientY - r.top)  / r.height - 0.5;
+                calcSvgEl.style.transition = 'transform 0.1s ease-out, filter 0.3s';
+                calcSvgEl.style.transform  =
+                    'perspective(500px) rotateY(' + (px * 42) + 'deg) ' +
+                    'rotateX(' + (-py * 32) + 'deg) scale(1.12)';
+                calcSvgEl.style.filter =
+                    'drop-shadow(0 ' + (py * 20 + 20) + 'px ' + (40 + Math.abs(px) * 20) + 'px rgba(43,181,160,0.65))';
+            });
+
+            calcWrapper.addEventListener('mouseleave', function () {
+                calcSvgEl.style.transition = 'transform 0.45s cubic-bezier(0.16,1,0.3,1), filter 0.4s';
+                calcSvgEl.style.transform  = '';
+                calcSvgEl.style.filter     = '';
+            });
+        }
+    }
+
     // --- Count-up animation for stats ---
     var statNumbers = document.querySelectorAll('.stat-number[data-target]');
 
